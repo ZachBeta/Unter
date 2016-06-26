@@ -1,23 +1,9 @@
-// hit a simple end point with ajax and have a controller give us this
-var cars = [];
-
-$.get('/nearby_drivers', //data format for params?
-      function setCars(responseData) {
-        cars = responseData.nearbyDrivers;
-      });
-
 // google maps code here on
 var map,
-carMarkers = [];
+carMarkers = [],
+cars = [];
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {
-      lat: 41.3083,
-      lng: -72.9279
-    },
-    zoom: 14
-  });
+function initDrivers() {
   var image = {
     url: '<%= image_path 'car.png' %>',
     scaledSize: new google.maps.Size(32, 32),
@@ -35,5 +21,19 @@ function initMap() {
       icon: image
     });
     carMarkers.push(marker);
+  });
+}
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: 41.3083,
+      lng: -72.9279
+    },
+    zoom: 14
+  });
+  $.get('/nearby_drivers', function setCars(responseData) {
+    cars = responseData.nearbyDrivers;
+    initDrivers();
   });
 }
