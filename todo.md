@@ -16,9 +16,15 @@
 # Nice touches
 * get a favicon setup
 * setup dns
+* travis free tier setup for tests
+* code climate
+* angular
+* db constraints and indexes
 
 # Not so minimal
-* tracking position of arriving driver
+* tracking position of arriving driver and seeing them arrive
+* estimated arrival time
+* ability to rate drivers, riders
 * tracking position of driver during trip
 * mobile app wrappers
 * fare calculation based on time + distance
