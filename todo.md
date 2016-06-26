@@ -16,11 +16,12 @@
 # Not so minimal
 * tracking position of arriving driver
 * tracking position of driver during trip
-* mobile apps
+* mobile app wrappers
 * fare calculation based on time + distance
 * built in payment service
 * bower to install js libraries
 * chef scripts to spin up an ec2 instance
+* postgis
 
 # Local Dev Environment
 * jshint/etc. for vim
