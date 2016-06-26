@@ -1,16 +1,10 @@
-//data to extract
-var cars = [
-  {
-    lat: 41.3083,
-    lng: -72.9279
-  },{
-    lat: 41.324668,
-    lng: -72.9123427
-  },{
-    lat: 41.3154237,
-    lng: -72.9209239
-  }
-]
+// hit a simple end point with ajax and have a controller give us this
+var cars = [];
+
+$.get('/nearby_drivers', //data format for params?
+      function setCars(responseData) {
+        cars = responseData.nearbyDrivers;
+      });
 
 // google maps code here on
 var map,
