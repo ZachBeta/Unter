@@ -28,8 +28,8 @@ function initMap() {
   _(cars).each(function createCarPin(car) {
     var marker = new google.maps.Marker({
       position: {
-        lat: car.lat,
-        lng: car.lng
+        lat: parseFloat(car.lat),
+        lng: parseFloat(car.lng)
       },
       map: map,
       icon: image

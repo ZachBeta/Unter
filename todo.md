@@ -2,8 +2,8 @@
 0. [x] I see a map (basic server with basic google maps)
 1. [x] I see a map of hard coded drivers clientside (using google maps nontrivially)
 2. [x] I see a map of hard coded drivers from server (organizing js and using an internal "api")
-3. [ ] I see a map of randomly created drivers from server (random points created in range nearby)
-4. [ ] I create an account and see a map of "drivers" nearby (account management)
+3. [x] I see a map of database backed drivers from server
+4. [ ] I create an account and see a map of drivers nearby (account management)
 5. [ ] I use my account to request a ride from a random driver (minimalist matchmaking)
 6. [ ] I use my account to request a ride from an "optimal" driver (actual matchmaking class)
 
@@ -16,11 +16,12 @@
 # Not so minimal
 * tracking position of arriving driver
 * tracking position of driver during trip
-* mobile apps
+* mobile app wrappers
 * fare calculation based on time + distance
 * built in payment service
 * bower to install js libraries
 * chef scripts to spin up an ec2 instance
+* postgis
 
 # Local Dev Environment
 * jshint/etc. for vim
