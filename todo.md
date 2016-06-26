@@ -13,6 +13,10 @@
 * I see the closest available drivers
 * I request a ride and it matches me with a driver
 
+# Nice touches
+* get a favicon setup
+* setup dns
+
 # Not so minimal
 * tracking position of arriving driver
 * tracking position of driver during trip
