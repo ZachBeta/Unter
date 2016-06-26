@@ -1,6 +1,6 @@
 # Phase by Phase Buildup
 0. [x] I see a map (basic server with basic google maps)
-1. [ ] I see a map of hard coded drivers clientside (using google maps nontrivially)
+1. [x] I see a map of hard coded drivers clientside (using google maps nontrivially)
 2. [ ] I see a map of hard coded drivers from server (organizing js and using an internal "api")
 3. [ ] I see a map of randomly created drivers from server (random points created in range nearby)
 4. [ ] I create an account and see a map of "drivers" nearby (account management)
