@@ -2,7 +2,7 @@
 0. [x] I see a map (basic server with basic google maps)
 1. [x] I see a map of hard coded drivers clientside (using google maps nontrivially)
 2. [x] I see a map of hard coded drivers from server (organizing js and using an internal "api")
-3. [ ] I see a map of randomly created drivers from server (random points created in range nearby)
+3. [x] I see a map of database backed drivers from server
 4. [ ] I create an account and see a map of drivers nearby (account management)
 5. [ ] I use my account to request a ride from a random driver (minimalist matchmaking)
 6. [ ] I use my account to request a ride from an "optimal" driver (actual matchmaking class)
