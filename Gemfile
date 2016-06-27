@@ -47,3 +47,8 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
+gem 'puma'
+
+gem 'factory_girl_rails'
+gem 'rspec-rails'
+gem 'database_cleaner'
