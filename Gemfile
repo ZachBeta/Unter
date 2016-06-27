@@ -51,3 +51,4 @@ gem 'puma'
 
 gem 'factory_girl_rails'
 gem 'rspec-rails'
+gem 'database_cleaner'
