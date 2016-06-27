@@ -10,4 +10,8 @@ class Driver < ActiveRecord::Base
   def self.available
     where(available: true)
   end
+
+  def self.matching(lat: 0, lng: 0)
+    self.available.closest(lat: lat, lng: lng).take(5)
+  end
 end

@@ -21,4 +21,26 @@ describe Driver, type: :model do
       expect(available).not_to include(not_available_driver)
     end
   end
+
+  describe '.matching' do
+    it 'returns the closest 5 available drivers' do
+      (-1..1).each do |lat|
+        (-1..1).each do |lng|
+          Driver.create(available: true, lat: lat, lng: lng)
+        end
+      end
+      # We expect only the cars directly next to the point to match
+      # n, y, n
+      # y, y, y
+      # n, y, n
+
+      matching = Driver.matching(lat: 0, lng: 0)
+      expect(matching.size).to eq(5)
+      expect(matching).to include(Driver.find_by(lat: 0, lng: 0))
+      expect(matching).to include(Driver.find_by(lat: -1, lng: 0))
+      expect(matching).to include(Driver.find_by(lat: 0, lng: -1))
+      expect(matching).to include(Driver.find_by(lat: 1, lng: 0))
+      expect(matching).to include(Driver.find_by(lat: 0, lng: 1))
+    end
+  end
 end
