@@ -7,16 +7,20 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Development Drivers
+Driver.destroy_all
 [
   {
     lat: 41.3083,
-    lng: -72.9279
+    lng: -72.9279,
+    available: true,
   },{
     lat: 41.324668,
-    lng: -72.9123427
+    lng: -72.9123427,
+    available: true,
   },{
     lat: 41.3154237,
-    lng: -72.9209239
+    lng: -72.9209239,
+    available: true,
   }
 ].each do |attrs|
   Driver.create(attrs)
