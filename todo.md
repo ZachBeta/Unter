@@ -15,13 +15,12 @@
 
 # Nice touches
 * get a favicon setup
-* setup dns
 * travis free tier setup for tests
 * code climate
-* angular
 * db constraints and indexes
-* driver lat lng not null
-* driver available default false
+  * driver lat lng not null
+  * driver available default false
+  * index on ride completion time
 
 # Not so minimal
 * tracking position of arriving driver and seeing them arrive
