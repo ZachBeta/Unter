@@ -20,6 +20,8 @@
 * code climate
 * angular
 * db constraints and indexes
+* driver lat lng not null
+* driver available default false
 
 # Not so minimal
 * tracking position of arriving driver and seeing them arrive
@@ -32,6 +34,8 @@
 * bower to install js libraries
 * chef scripts to spin up an ec2 instance
 * postgis
+* extract drivers data to be point in time for driver, and get latest point in time data point
+* make availability based on lack of "current trip" record (trip with no end time marked)
 
 # Local Dev Environment
 * jshint/etc. for vim
