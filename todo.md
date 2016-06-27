@@ -32,7 +32,7 @@
 * built in payment service
 * bower to install js libraries
 * chef scripts to spin up an ec2 instance
-* postgis
+* postgis for in database distance calculation https://github.com/rgeo/activerecord-postgis-adapter
 * extract drivers data to be point in time for driver, and get latest point in time data point
 * make availability based on lack of "current trip" record (trip with no end time marked)
 
