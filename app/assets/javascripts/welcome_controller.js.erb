@@ -32,7 +32,12 @@ function initMap() {
     },
     zoom: 14
   });
-  $.get('/nearby_drivers', function setCars(responseData) {
+
+  var nearby_drivers_params = {
+    lat: 41.3083,
+    lng: -72.9279
+  };
+  $.get('/nearby_drivers', nearby_drivers_params, function setCars(responseData) {
     cars = responseData.nearbyDrivers;
     initDrivers();
   });

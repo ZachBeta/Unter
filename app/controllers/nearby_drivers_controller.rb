@@ -1,8 +1,16 @@
 class NearbyDriversController < ApplicationController
   def index
     render json: {
-      nearbyDrivers: Driver.all
-      # FIXME: filter only data we want, use a serializer and find the correct "nearby" or "available" drivers
+      nearbyDrivers: Driver.matching(nearby_drivers_params)
+    }
+  end
+
+  private
+
+  def nearby_drivers_params
+    {
+      lat: params[:lat].to_i,
+      lng: params[:lng].to_i,
     }
   end
 end
