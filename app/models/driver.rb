@@ -6,4 +6,8 @@ class Driver < ActiveRecord::Base
       Math.sqrt((lat - driver.lat)**2 + (lng - driver.lng)**2)
     }
   end
+
+  def self.available
+    where(available: true)
+  end
 end
